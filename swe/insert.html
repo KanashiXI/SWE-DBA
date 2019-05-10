@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>Infomation Student</title>
+
+</head>
+
+<body>
+        <body>
+                <div class="container">
+                    <form>
+                        <hr>
+                        <h5 class="modal-title">Create Student</h5>
+                        <hr>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">Nickname:</span>
+                            </div>
+                            <input type="text" class="form-control" id="name" name="name">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">Age:</span>
+                            </div>
+                            <input type="text" class="form-control" id="age" name="age">
+                        </div>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">Phone:</span>
+                            </div>
+                            <input type="text" class="form-control" id="phone" name="phone">
+                        </div>
+                        <hr>
+                        <h5 class="modal-title">Address</h5>
+                        <hr>
+            
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">House number:</span>
+                            </div>
+                            <input type="text" class="form-control" id="noh" name="noh">
+                        </div>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">Subdistrict:</span>
+                            </div>
+                            <input type="text" class="form-control" id="subdis" name="subdistrict">
+                        </div>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">District:</span>
+                            </div>
+                            <input type="text" class="form-control" id="dist" name="district">
+                        </div>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">Province:</span>
+                            </div>
+                            <input type="text" class="form-control" id="prov" name="province">
+                        </div>
+                        <hr>
+                        <h5 class="modal-title">Education</h5>
+                        <hr>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">Prathom:</span>
+                            </div>
+                            <input type="text" class="form-control" id="por" name="education0">
+                        </div>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">Matthayom:</span>
+                            </div>
+                            <input type="text" class="form-control" id="mor" name="education1">
+                        </div>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">University:</span>
+                            </div>
+                            <input type="text" class="form-control" id="univ" name="education2">
+                        </div>
+                    </form>
+                    <form>
+                        <button type="submit" class="btn btn-success" id="btn-confirm">
+                            Confirm
+                        </button>
+                        <button type="submit" class="btn btn-danger" data-toggle="modal" data-target="#myModal" 
+                            onclick="window.location.href='index.html'">
+                            Cancel
+                        </button>
+                    </form>
+                </div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script>
+            $(document).ready(function () {
+                
+                $("#btn-confirm").click(function () { 
+                   
+                    $.post("http://localhost/slimMongo/insert", {
+                        name: $("#name").val(),
+                        age: $("#age").val(),
+                        phone: $("#phone").val(),
+                        education0: $("#por").val(),
+                        education1: $("#mor").val(),
+                        education2: $("#univ").val(),
+                        noh: $("#noh").val(),
+                        subdistrict: $("#subdis").val(),
+                        district: $("#dist").val(),
+                        province: $("#prov").val()
+                        
+                    },
+                        function (data, textStatus) {
+                            alert("Data: " + data + "\nStatus: " + status);
+                        },
+                        
+                    );
+                    
+                });
+
+                // $("#btn-confirm").click(function (e) { 
+                //     e.preventDefault();
+                //     alert("click!");
+                // });
+            });
+        </script>
+
+</body>
+
+</html>
