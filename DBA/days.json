@@ -1,0 +1,7 @@
+{"_id":{"$oid":"5cee87e8a5f6d77617f3d7ec"},"no":1,"day":"Monday"}
+{"_id":{"$oid":"5cee87f4a5f6d77617f3d7f2"},"no":2,"day":"Tuesday"}
+{"_id":{"$oid":"5cee87ffa5f6d77617f3d7f8"},"no":3,"day":"Wednesday"}
+{"_id":{"$oid":"5cee880da5f6d77617f3d804"},"no":4,"day":"Thuesday"}
+{"_id":{"$oid":"5cee8817a5f6d77617f3d80e"},"no":5,"day":"Friday"}
+{"_id":{"$oid":"5cee8825a5f6d77617f3d812"},"no":6,"day":"Saturday"}
+{"_id":{"$oid":"5cee882fa5f6d77617f3d816"},"no":7,"day":"Sunday"}

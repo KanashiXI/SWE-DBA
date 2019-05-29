@@ -1,0 +1,7 @@
+{"_id":{"$oid":"5cee9ed9edd20953b9a157ad"},"position_id":"P01","name":"Doctors"}
+{"_id":{"$oid":"5cee9ed9edd20953b9a157af"},"position_id":"P02","name":"Specialty Doctors"}
+{"_id":{"$oid":"5cee9ed9edd20953b9a157b1"},"position_id":"P03","name":"Nurses"}
+{"_id":{"$oid":"5cee9ed9edd20953b9a157b3"},"position_id":"P04","name":"Nurse Practitioners"}
+{"_id":{"$oid":"5cee9ed9edd20953b9a157b5"},"position_id":"P05","name":"Wards persons"}
+{"_id":{"$oid":"5cee9ed9edd20953b9a157b7"},"position_id":"P06","name":"Security"}
+{"_id":{"$oid":"5cee9ed9edd20953b9a157b9"},"position_id":"P07","name":"Wards persons"}

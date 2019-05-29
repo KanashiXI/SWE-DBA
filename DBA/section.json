@@ -1,0 +1,7 @@
+{"_id":{"$oid":"5ceed717edd20953b9a15a44"},"sec_id":"S01","name":"MEDICINE","short":"MED"}
+{"_id":{"$oid":"5ceed717edd20953b9a15a46"},"sec_id":"S02","name":"SURGICAL","short":"SUR"}
+{"_id":{"$oid":"5ceed717edd20953b9a15a48"},"sec_id":"S03","name":"EMERGENCY ROOM","short":"ER"}
+{"_id":{"$oid":"5ceed717edd20953b9a15a4a"},"sec_id":"S04","name":"OPERATING ROOM","short":"OR"}
+{"_id":{"$oid":"5ceed717edd20953b9a15a4c"},"sec_id":"S05","name":"Intensive Care Unit","short":"ICU"}
+{"_id":{"$oid":"5ceed717edd20953b9a15a4e"},"sec_id":"S06","name":"OBSTRETIC GYNECOLOGY","short":"OB-GYN"}
+{"_id":{"$oid":"5ceed717edd20953b9a15a50"},"sec_id":"S07","name":"PEDIATRIC","short":"PED"}
