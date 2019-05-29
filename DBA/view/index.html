@@ -13,6 +13,8 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!-- jquery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
 
   <title>Hello, world!</title>
 
@@ -87,21 +89,36 @@
       box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
     }
 
-    .container {
+    /* .container {
       padding: 2px 16px;
-    }
+    } */
 
-    #con-card,#con-card2{
-      margin-right: 15px;
-      margin-left: 15px;
+    #con-card{
+      display: inline-block;
+      position: relative;
+      width: 100%;
+      background-size: contain;
+      text-align: center;
     }
   </style>
 </head>
+<!-- $(#searctID).hide(); -->
+<script>
+  
+
+  // $(document).ready(function(){
+  //   $("#searctID").hide();
+  //   $("#btnserch2").click(function(){
+  //     $("#searctID").show();
+  //   });
+  // });
+  </script>
+
 
 <body>
 <!-- nav bar -->
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">Navbar</a>
+    <a class="navbar-brand" href="#">TIme table</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -131,39 +148,23 @@
       </ul>
       <form class="form-inline my-2 my-lg-0">
         <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit" >Search</button>
       </form>
     </div>
   </nav>
 <!-- end nav bar -->
+
 <!-- search bar -->
 <body>
-    <div class="container h-100">
-      <div class="d-flex justify-content-center h-100">
-        <div class="searchbar">
-          <input class="search_input" type="text" name="" placeholder="Search...">
+    <div class="container h-50" >
+      <div class="d-flex justify-content-center h-50">
+        <div class="searchbar" id="searctID">
+          <input class="search_input" type="text" name="" placeholder="Search..." >
           <a href="#" class="search_icon"><i class="fas fa-search"></i></a>
         </div>
       </div>
     </div>
 
-    <div class="container h-100">
-        <div class="d-flex justify-content-center h-100">
-          <div class="searchbar">
-            <input class="search_input" type="text" name="" placeholder="Search...">
-            <a href="#" class="search_icon"><i class="fas fa-search"></i></a>
-          </div>
-        </div>
-      </div>
-
-      <div class="container h-100">
-          <div class="d-flex justify-content-center h-100">
-            <div class="searchbar">
-              <input class="search_input" type="text" name="" placeholder="Search...">
-              <a href="#" class="search_icon"><i class="fas fa-search"></i></a>
-            </div>
-          </div>
-        </div>
   
 <!-- end search -->
  
@@ -179,38 +180,38 @@
   
   <div class="container-fluid" id="con-card">
         <div class="row">
-                <div class="col-sm-3">
-                  <div class="card" style="width: 18rem;">
+                <div class="col-sm-3" >
+                  <div class="card" style="width:auto;">
                     <img class="card-img-top" src="https://cdn5.vectorstock.com/i/1000x1000/23/49/new-man-avatar-icon-flat-vector-19152349.jpg" alt="Avatar" alt="Card image cap">
                     <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
+                      <h5 class="card-title">Pongsathon Rakthong</h5>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="btn btn-warning" id="btnserch">information</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-3">
+                  <div class="card" style="width:auto;">
+                    <img class="card-img-top" src="https://cdn5.vectorstock.com/i/1000x1000/23/49/new-man-avatar-icon-flat-vector-19152349.jpg" alt="Avatar" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">Panyapat ueaboon</h5>
                       <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                       <a href="#" class="btn btn-warning">Go somewhere</a>
                     </div>
                   </div>
                 </div>
                 <div class="col-sm-3">
-                  <div class="card" style="width: 18rem;">
+                  <div class="card" style="width:auto;">
                     <img class="card-img-top" src="https://cdn5.vectorstock.com/i/1000x1000/23/49/new-man-avatar-icon-flat-vector-19152349.jpg" alt="Avatar" alt="Card image cap">
                     <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
+                      <h5 class="card-title">Jatuporn Phummanee</h5>
                       <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                       <a href="#" class="btn btn-warning">Go somewhere</a>
                     </div>
                   </div>
                 </div>
                 <div class="col-sm-3">
-                  <div class="card" style="width: 18rem;">
-                    <img class="card-img-top" src="https://cdn5.vectorstock.com/i/1000x1000/23/49/new-man-avatar-icon-flat-vector-19152349.jpg" alt="Avatar" alt="Card image cap">
-                    <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="#" class="btn btn-warning">Go somewhere</a>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-sm-3">
-                  <div class="card" style="width: 18rem;">
+                  <div class="card" style="width:auto;">
                     <img class="card-img-top" src="https://cdn5.vectorstock.com/i/1000x1000/23/49/new-man-avatar-icon-flat-vector-19152349.jpg" alt="Avatar" alt="Card image cap">
                     <div class="card-body">
                       <h5 class="card-title">Card title</h5>
@@ -224,7 +225,7 @@
         <br>
         <div class="row">
                 <div class="col-sm-3">
-                  <div class="card" style="width: 18rem;">
+                  <div class="card" style="width: auto;">
                     <img class="card-img-top" src="../img/pto.jpg" alt="Avatar" alt="Card image cap">
                     <div class="card-body">
                       <h5 class="card-title">Card title</h5>
@@ -234,7 +235,7 @@
                   </div>
                 </div>
                 <div class="col-sm-3">
-                  <div class="card" style="width: 18rem;">
+                  <div class="card" style="width: auto;">
                     <img class="card-img-top" src="../img/pto.jpg" alt="Avatar" alt="Card image cap">
                     <div class="card-body">
                       <h5 class="card-title">Card title</h5>
@@ -244,7 +245,7 @@
                   </div>
                 </div>
                 <div class="col-sm-3">
-                  <div class="card" style="width: 18rem;">
+                  <div class="card" style="width: auto;">
                     <img class="card-img-top" src="../img/pto.jpg" alt="Avatar" alt="Card image cap">
                     <div class="card-body">
                       <h5 class="card-title">Card title</h5>
@@ -254,7 +255,7 @@
                   </div>
                 </div>
                 <div class="col-sm-3">
-                  <div class="card" style="width: 18rem;">
+                  <div class="card" style="width: auto;">
                     <img class="card-img-top" src="../img/pto.jpg" alt="Avatar" alt="Card image cap">
                     <div class="card-body">
                       <h5 class="card-title">Card title</h5>
