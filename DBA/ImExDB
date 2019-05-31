@@ -1,0 +1,5 @@
+//import
+mongoimport --db MDTI --collection [collection] --file [path]
+
+//export
+mongoexport --db MDTI --collection [colection] --out [path]
