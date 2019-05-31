@@ -1,4 +1,10 @@
-    {
+{
+    "license" : "T-3624xV01",
+    "name" : "ณัฐชาพร",
+    "surname" : "วิวัฒนพิทยาวุฒิ",
+    "gender" : "F",
+    "position" : "P01",
+    "section" : "S01",
         
     "round" : [ 
         {
