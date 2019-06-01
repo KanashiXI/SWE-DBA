@@ -1,0 +1,6 @@
+{"_id":{"$oid":"5cf2b3cad1acf0b23ae7ac25"},"round_id":"R01","round":[{"day":1,"duty":["D01","D02"]},{"day":3,"duty":["D01","D03"]},{"day":5,"duty":["D02","D03"]},{"day":7,"duty":["D02","D03"]}]}
+{"_id":{"$oid":"5cf2b51ad1acf0b23ae7ac52"},"round_id":"R02","round":[{"day":2,"duty":["D02","D03"]},{"day":4,"duty":["D01","D02"]},{"day":6,"duty":["D01","D03"]}]}
+{"_id":{"$oid":"5cf2bb78d1acf0b23ae7ad05"},"round_id":"R03","round":[{"day":1,"duty":["D02","D03"]},{"day":3,"duty":["D01","D02"]},{"day":5,"duty":["D01","D03"]},{"day":7,"duty":["D01","D03"]}]}
+{"_id":{"$oid":"5cf2bcbed1acf0b23ae7ad29"},"round_id":"R04","round":[{"day":2,"duty":["D01","D03"]},{"day":4,"duty":["D02","D03"]},{"day":6,"duty":["D01","D02"]}]}
+{"_id":{"$oid":"5cf2bd3ed1acf0b23ae7ad38"},"round_id":"R05","round":[{"day":1,"duty":["D02","D03"]},{"day":3,"duty":["D01","D02"]},{"day":5,"duty":["D01","D03"]},{"day":7,"duty":["D01","D03"]}]}
+{"_id":{"$oid":"5cf2bddfd1acf0b23ae7ad4b"},"round_id":"R06","round":[{"day":2,"duty":["D01","D03"]},{"day":4,"duty":["D02","D03"]},{"day":6,"duty":["D01","D02"]}]}
